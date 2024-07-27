@@ -1,6 +1,6 @@
 <template>
   <ContentField>
-    首页
+    注册
   </ContentField>
 </template>
 
@@ -9,7 +9,7 @@ import ContentField from '@/components/ContentField.vue';
 
 
 export default {
-  name: 'HomeView',
+  name: 'RegisterView',
   components: {
     ContentField
   }

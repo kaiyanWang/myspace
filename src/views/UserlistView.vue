@@ -1,6 +1,6 @@
 <template>
   <ContentField>
-    首页
+    好友列表
   </ContentField>
 </template>
 
@@ -9,7 +9,7 @@ import ContentField from '@/components/ContentField.vue';
 
 
 export default {
-  name: 'HomeView',
+  name: 'UserlistView',
   components: {
     ContentField
   }

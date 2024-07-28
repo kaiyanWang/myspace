@@ -4,6 +4,7 @@ import LoginView from '@/views/LoginView.vue'
 import UserlistView from '@/views/UserlistView.vue'
 import UserspaceView from '@/views/UserspaceView.vue'
 import RegisterView from '@/views/RegisterView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
 
 const routes = [
   {
@@ -12,24 +13,33 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/login',
+    path: '/login/',
     name: 'login',
     component: LoginView
   },
   {
-    path: '/register',
+    path: '/register/',
     name: 'register',
     component: RegisterView
   },
   {
-    path: '/userlist',
+    path: '/userlist/',
     name: 'userlist',
     component: UserlistView
   },
   {
-    path: '/userspace',
+    path: '/userspace/:userID/',
     name: 'userspace',
     component: UserspaceView
+  },
+  {
+    path: '/404/',
+    name: '404',
+    component: NotFoundView
+  },
+  {
+    path: '/:catchAll(.*)',
+    redirect: '/404/'
   },
 ]
 
